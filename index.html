@@ -11,13 +11,57 @@
 </head>
 
 <body>
-
     <header>
-        <img src="./imgs/Logo.svg" alt="logo Alura">
+        <img src="./imgs/logo.svg" alt="logo Alura" />
         <h1>Encriptador de Texto - Desafio Alura</h1>
+        
+        <input name="toggle" type="checkbox" id="toggle">
+
+        <label class="toggle" for="toggle">
+            <i class="bx bxs-sun"></i>
+            <i class="bx bx-moon"></i>
+            <span class="ball"></span>
+        </label>
+        
     </header>
     <main>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- seccion izquierda de la pagina botones -->
+        <div class="section-1">
+            <div class="campo-texto">
+                <textarea class="txt-box" name="txt-box" id=" txt-box" cols="30" rows="10"
+                    placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="msj-alerta">
+                <img class="img-alerta" src="./imgs/alerta.svg" alt="exclamation" />
+                <p class="alerta">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="btn-limpiar" >Limpiar</button>
+            </div>
+        </div>
+
+        <!-- seccion derecha de la pagina muestra el texto encripatado -->
+        <div class="section-2">
+            <div class="campo-resultado">
+                <div class="container-parrafo-resultado">
+                    <p class="txt-resultado">bruh</p>
+                </div>
+                <div class="container-imagen-dibujo">
+                    <img src="./imgs/dibujo.svg" alt="dibujo">
+                </div>
+                <h2 class="msj-no-encontrado">Ningun mensaje fue encontrado</h2>
+                <div class="container-parrafo">
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p> 
+                </div>
+                <div class="container-copiar">
+                    <button class="btn-copiar">Copiar</button>
+                </div> 
+            </div>
+        </div>
+
     </main>
     <footer>
         <div class="container-redes">
@@ -35,6 +79,8 @@
         </div>
         <p class="copy">copyright &copy; Aldair Alexis</p>
     </footer>
+    
+    <!--Scripts xD-->
     <script src="script.js"></script>
 </body>
 
