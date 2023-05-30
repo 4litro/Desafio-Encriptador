@@ -6,59 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Encriptador - Alexis Suarez</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
 <body>
     <header>
         <img src="./imgs/logo.svg" alt="logo Alura" />
         <h1>Encriptador de Texto - Desafio Alura</h1>
-        
-        <input name="toggle" type="checkbox" id="toggle">
 
-        <label class="toggle" for="toggle">
-            <i class="bx bxs-sun"></i>
-            <i class="bx bx-moon"></i>
-            <span class="ball"></span>
-        </label>
-        
     </header>
     <main>
 
         <!-- seccion izquierda de la pagina botones -->
         <div class="section-1">
             <div class="campo-texto">
-                <textarea class="txt-box" name="txt-box" id=" txt-box" cols="30" rows="10"
-                    placeholder="Ingrese el texto aquí"></textarea>
+                <textarea class="txt-box" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             </div>
             <div class="msj-alerta">
-                <img class="img-alerta" src="./imgs/alerta.svg" alt="exclamation" />
-                <p class="alerta">Solo letras minúsculas y sin acentos</p>
+                <h6 class="alerta">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
-                <button class="btn-limpiar" >Limpiar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                <button class="btn-limpiar" onclick="limpiar()">Limpiar</button>
             </div>
         </div>
 
         <!-- seccion derecha de la pagina muestra el texto encripatado -->
         <div class="section-2">
             <div class="campo-resultado">
-                <div class="container-parrafo-resultado">
-                    <p class="txt-resultado">bruh</p>
-                </div>
-                <div class="container-imagen-dibujo">
-                    <img src="./imgs/dibujo.svg" alt="dibujo">
-                </div>
-                <h2 class="msj-no-encontrado">Ningun mensaje fue encontrado</h2>
-                <div class="container-parrafo">
-                    <p>Ingresa el texto que desees encriptar o desencriptar</p> 
-                </div>
+                <textarea class="mensaje" cols="20" rows="10"></textarea>
                 <div class="container-copiar">
-                    <button class="btn-copiar">Copiar</button>
-                </div> 
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
             </div>
         </div>
 
@@ -79,9 +60,9 @@
         </div>
         <p class="copy">copyright &copy; Aldair Alexis</p>
     </footer>
-    
+
     <!--Scripts xD-->
-    <script src="script.js"></script>
+    <script src="./src/script.js"></script>
 </body>
 
 </html>
