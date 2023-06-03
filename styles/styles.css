@@ -9,7 +9,7 @@
 
 body {
     background-color: #000;
-    background-image: url("/imgs/wallpaper.png");
+    background-image: url("imgs/wallpaper.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -61,7 +61,7 @@ main {
 
 .mensaje {
     background: #000;
-    background-image: url("/imgs/pochita.png");
+    background-image: url("imgs/pochita.png");
     background-repeat: no-repeat;
     background-position: center;
     height: 630px;
