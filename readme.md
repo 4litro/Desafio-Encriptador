@@ -22,8 +22,8 @@ https://twitter.com/chacatrozo Twitter
 https://www.linkedin.com/in/alexisuarez/ LinkedId
 
 ## Agradecimientos
-- Agradezco mucho a alura por darme la oportunidad de aprender con ellos 🕹️  
-- Agradezco mucho a mis padres 
+- Agradezco mucho a Alura por darme la oportunidad de aprender con ellos 🕹️. 
+- Agradezco mucho a mis padres.
 
 © 2023 Encrptador - Alexis Suarez. Todos los derechos reservados.
 
