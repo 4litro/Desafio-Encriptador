@@ -6,26 +6,13 @@ const copia = document.querySelector(".btn-copiar");
 
 copia.style.display = "none"
 
-function validarTexto() {
-   //declaramos la viarable validar texto para que solo acepte caracteres letras de la a la z
-   let textoEscrito = document.querySelector(".txt-box").value;
-   let validador = textoEscrito.match(/^[a-z]*$/);
-
-   if (!validador || validador === 0) {
-      alert("Solo son permitidas letras minúsculas y sin acentos")
-      location.reload();
-      return true;
-   }
-}
 
 function btnEncriptar() {
-   if (!validarTexto()) {
       const textoEncriptado = encriptar(textArea.value)
       mensaje.value = textoEncriptado
       mensaje.style.backgroundImage = "none"
       textArea.value = "";
       copia.style.display = "block"
-   }
 }
 
 //Laves de encriptacion
